@@ -1,5 +1,10 @@
 # Decky Books
 
+## Репозиторий проекта
+
+`https://github.com/genialniychelovek/Decky-books`
+
+
 Decky Books — плагин-читалка для Decky Loader / Steam Deck Gaming Mode в стиле Apple Books.
 
 ## Возможности
@@ -16,7 +21,7 @@ Decky Books — плагин-читалка для Decky Loader / Steam Deck Gam
 
 ## Что загрузить на GitHub
 
-Загрузите содержимое этого архива в новый репозиторий GitHub. В корне репозитория должен лежать файл `plugin.json`.
+Этот архив уже настроен под репозиторий `https://github.com/genialniychelovek/Decky-books`. Загрузите/обновите содержимое архива в этом репозитории. В корне репозитория должен лежать файл `plugin.json`.
 
 Подходящая структура:
 
@@ -37,7 +42,7 @@ repo-root/
 
 В интерфейсе плагина заполните:
 
-- **Источник GitHub**: `https://github.com/YOUR_USER/YOUR_REPO`
+- **Источник GitHub**: `https://github.com/genialniychelovek/Decky-books`
 - **Branch**: `main`
 - **Subdir**: оставить пустым, если `plugin.json` лежит в корне репозитория
 
@@ -52,13 +57,13 @@ repo-root/
 ## Установка одной командой из вашего репозитория
 
 ```bash
-REPO_URL="https://github.com/YOUR_USER/YOUR_REPO" BRANCH="main" ./install-from-github.sh
+REPO_URL="https://github.com/genialniychelovek/Decky-books" BRANCH="main" ./install-from-github.sh
 ```
 
 Если проект лежит в подпапке:
 
 ```bash
-REPO_URL="https://github.com/YOUR_USER/YOUR_REPO" BRANCH="main" SUBDIR="decky-books-plugin" ./install-from-github.sh
+REPO_URL="https://github.com/genialniychelovek/Decky-books" BRANCH="main" SUBDIR="decky-books-plugin" ./install-from-github.sh
 ```
 
 ## Сборка

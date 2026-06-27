@@ -18,7 +18,7 @@ REPO_FILE = DATA_DIR / "repo.json"
 BOOK_DIRS = [Path.home() / "Books", Path.home() / "Documents" / "Books", Path.home() / "Downloads"]
 EXTS = {".txt", ".md", ".epub", ".pdf", ".fb2", ".zip"}
 DEFAULT_REPO = {
-    "repoUrl": "https://github.com/YOUR_USER/YOUR_REPO",
+    "repoUrl": "https://github.com/genialniychelovek/Decky-books",
     "branch": "main",
     "subdir": "",
     "autoUpdate": False,
@@ -86,7 +86,7 @@ def _github_archive_url(repo_url: str, branch: str) -> str:
     host = parsed.netloc.lower()
     parts = [p for p in parsed.path.strip("/").split("/") if p]
     if host != "github.com" or len(parts) < 2:
-        raise ValueError("Укажите ссылку вида https://github.com/user/repo")
+        raise ValueError("Укажите ссылку вида https://github.com/genialniychelovek/Decky-books")
     owner, repo = parts[0], parts[1].removesuffix(".git")
     safe_branch = urllib.parse.quote(branch or "main", safe="")
     return f"https://github.com/{owner}/{repo}/archive/refs/heads/{safe_branch}.zip"

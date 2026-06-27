@@ -2,18 +2,18 @@
 set -euo pipefail
 
 # Usage:
-#   REPO_URL="https://github.com/user/repo" BRANCH="main" ./install-from-github.sh
+#   REPO_URL="https://github.com/genialniychelovek/Decky-books" BRANCH="main" ./install-from-github.sh
 # Optional when plugin is inside a subfolder of the repo:
-#   SUBDIR="decky-books-plugin" REPO_URL="https://github.com/user/repo" ./install-from-github.sh
+#   SUBDIR="decky-books-plugin" REPO_URL="https://github.com/genialniychelovek/Decky-books" ./install-from-github.sh
 
-REPO_URL="${REPO_URL:-https://github.com/YOUR_USER/YOUR_REPO}"
+REPO_URL="${REPO_URL:-https://github.com/genialniychelovek/Decky-books}"
 BRANCH="${BRANCH:-main}"
 SUBDIR="${SUBDIR:-}"
 PLUGIN_NAME="${PLUGIN_NAME:-decky-books}"
 DEST="${DEST:-$HOME/homebrew/plugins/$PLUGIN_NAME}"
 
 if [[ "$REPO_URL" != https://github.com/*/* ]]; then
-  echo "REPO_URL must look like https://github.com/user/repo" >&2
+  echo "REPO_URL must look like https://github.com/genialniychelovek/Decky-books" >&2
   exit 1
 fi
 
