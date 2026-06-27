@@ -1,0 +1,10 @@
+{
+  "name": "Decky Books",
+  "author": "OpenAI ChatGPT",
+  "flags": [],
+  "publish": {
+    "tags": ["books", "reader", "epub", "txt", "ru", "i18n"],
+    "description": "Лёгкая читалка книг в стиле Apple Books для Steam Deck Gaming Mode с русским интерфейсом и переключателем RU/EN.",
+    "image": "assets/icon.png"
+  }
+}

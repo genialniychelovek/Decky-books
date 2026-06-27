@@ -1,0 +1,5 @@
+{
+  "scripts": {"build":"rollup -c", "watch":"rollup -c -w"},
+  "dependencies": {"@decky/ui":"latest", "@decky/api":"latest", "react":"^18.2.0", "react-dom":"^18.2.0"},
+  "devDependencies": {"@rollup/plugin-commonjs":"latest", "@rollup/plugin-node-resolve":"latest", "@rollup/plugin-typescript":"latest", "rollup":"latest", "typescript":"latest"}
+}
